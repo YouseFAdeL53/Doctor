@@ -1,0 +1,472 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --main-color: #2196f3;
+  --background: #d5d5d5;
+  --background-white: #fff;
+}
+
+body {
+  background-color: var(--background);
+  direction: rtl;
+  font-family: 'Cairo', sans-serif;
+}
+
+/* Start  */
+.area {
+  width: 100%;
+  padding: 30px;
+  background-color: var(--background-white);
+  margin-top: 15px;
+  border-bottom: 2px solid var(--main-color);
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ddd;
+}
+
+.area>h2 {
+  font-size: 25px;
+  font-weight: bold;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--main-color);
+  width: 350px;
+  color: #555;
+}
+
+.forms {
+  margin-top: 30px;
+}
+
+.forms .form {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 25px;
+}
+
+@media(min-width:0px) and (max-width:767px) {
+  .forms .form {
+    flex-wrap: wrap;
+  }
+
+  .area>h2 {
+    width: 250px;
+  }
+
+  .forms .form .info {
+    flex-basis: 100% !important;
+    margin-top: 10px;
+  }
+
+  .forms .form>a {
+    flex-basis: 25% !important;
+    font-size: 14px !important;
+  }
+
+  .form .box input,
+  .form .box select {
+    width: 100% !important;
+    margin-top: 10px;
+  }
+
+  .form .box select {
+    padding: 4px !important;
+  }
+}
+
+@media(min-width:768px) and (max-width:992px) {
+  .forms .form {
+    flex-wrap: wrap;
+  }
+
+  .area>h2 {
+    width: 250px;
+  }
+
+  .forms .form .info {
+    flex-basis: 100% !important;
+    margin-top: 10px;
+  }
+
+  .forms .form>a {
+    flex-basis: 25% !important;
+    font-size: 14px !important;
+  }
+
+  .form .box input,
+  .form .box select {
+    width: 100% !important;
+    margin-top: 10px;
+  }
+
+  .form .box select {
+    padding: 4px !important;
+  }
+}
+
+.forms .form>a {
+  font-size: 19px;
+  font-weight: bold;
+  color: var(--main-color);
+  text-decoration: none;
+  flex-basis: 15%;
+}
+
+.forms .form input[type="text"] {
+  flex-basis: 50%;
+  padding: 8px 15px;
+  border: 1px solid var(--main-color);
+  border-radius: 6px;
+  outline: none;
+  font-size: 15px;
+  caret-color: var(--main-color);
+}
+
+.forms .form .info {
+  flex-basis: 25%;
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.forms .form .info i {
+  margin-left: 15px;
+  margin-top: 3px;
+  color: var(--main-color);
+}
+
+.forms .form .info span {
+  font-size: 15px;
+}
+
+.forms .form input[type="date"] {
+  flex-basis: 50%;
+  padding: 8px 15px;
+  border: 1px solid var(--main-color);
+  border-radius: 6px;
+  outline: none;
+  font-size: 15px;
+  caret-color: var(--main-color);
+  color: #777;
+}
+
+.form .box:first-child {
+  flex-basis: 43%;
+}
+
+.form .box:first-child a {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--main-color);
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.form .box input {
+  width: 60%;
+  border: 1px solid var(--main-color);
+  border-radius: 6px;
+  padding: 5px 15px;
+  outline: none;
+}
+
+.form .box:nth-child(2) {
+  flex-basis: 50%;
+}
+
+.form .box:nth-child(2) a {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--main-color);
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+.form .box select {
+  width: 60%;
+  color: #777;
+  border: 1px solid var(--main-color);
+  border-radius: 6px;
+  outline: none;
+  padding: 6px 0;
+}
+
+/* End  */
+
+.style {
+  width: 350px;
+  height: 2px;
+  background-color: var(--main-color);
+  margin: 40px auto 30px;
+}
+
+@media(max-width:767px) {
+  .style {
+    width: 250px;
+  }
+}
+
+/* Start Info  */
+.info {}
+
+.info .box {
+  padding: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  border-radius: 6px;
+}
+
+@media(max-width:992px) {
+  .info .box {
+    margin-bottom: 20px;
+  }
+}
+
+.main-title {
+  color: #555;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.info .box input,
+.info .box select {
+  width: 100%;
+  padding: 5px 15px;
+  border: 1px solid var(--main-color);
+  border-radius: 6px;
+  caret-color: var(--main-color);
+  outline: none;
+}
+
+.main-btn {
+  display: block;
+  margin: 10px auto;
+  background-color: var(--main-color);
+  color: #fff;
+  transition: 0.5s;
+}
+
+.main-btn:hover {
+  opacity: 0.6 !important;
+  background-color: var(--main-color) !important;
+  color: #fff !important;
+}
+
+.info .box textarea {
+  width: 100%;
+  height: 150px;
+  border: 1px solid var(--main-color);
+  border-radius: 6px;
+  outline: none;
+  font-size: 15px;
+  caret-color: var(--main-color);
+  padding: 8px 15px;
+}
+
+/* End Info */
+
+
+
+/* Start Doctor */
+.doctor {
+  padding: 30px;
+  background-color: var(--background-white);
+  border-bottom: 2px solid var(--main-color);
+  margin-top: 15px;
+  border-radius: 6px;
+}
+
+.doctor>h2 {
+  font-size: 25px;
+  font-weight: bold;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--main-color);
+  width: 350px;
+  color: #555;
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+  .doctor>h2 {
+    width: 250px;
+  }
+}
+
+.doctor .box {
+  padding: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.09);
+  border-radius: 6px;
+  margin-top: 15px;
+}
+
+@media(max-width:992px) {
+  .doctor .box {
+    margin-bottom: 15px;
+  }
+}
+
+.doctor .col-12:first-child .box textarea {
+  height: 248px;
+}
+
+.doctor .box textarea {
+  width: 100%;
+  min-height: 150px;
+  padding: 10px 15px;
+  border: 1px solid var(--main-color);
+  border-radius: 6px;
+  outline: none;
+  caret-color: var(--main-color);
+}
+
+.doctor .box input,
+.doctor .box select {
+  padding: 5px 15px;
+  border: 1px solid var(--main-color);
+  outline: none;
+  width: 100%;
+  border-radius: 6px;
+  caret-color: var(--main-color);
+}
+
+.doctor .box select {
+  color: var(--main-color);
+  padding: 3px 10px;
+}
+.info .box select {
+  color: var(--main-color);
+  padding: 3px 10px;
+}
+
+/* End Doctor */
+
+.container .edit-btn {
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+
+/* Start Table */
+
+
+#example {
+  width: 100%;
+}
+
+.table.show {
+  display: inline-table;
+}
+
+.table {
+  display: none;
+}
+
+
+@media(max-width:993px) {
+  #example_wrapper {
+    overflow: scroll;
+  }
+}
+
+.table {
+  direction: ltr;
+  margin-top: 15px;
+}
+
+.table .box {
+  background-color: var(--background-white);
+  padding: 10px 15px;
+  border-radius: 6px;
+  border-bottom: 2px solid var(--main-color);
+}
+
+table.dataTable thead>tr>th.sorting,
+table.dataTable thead>tr>th.sorting_asc,
+table.dataTable thead>tr>th.sorting_desc,
+table.dataTable thead>tr>th.sorting_asc_disabled,
+table.dataTable thead>tr>th.sorting_desc_disabled,
+table.dataTable thead>tr>td.sorting,
+table.dataTable thead>tr>td.sorting_asc,
+table.dataTable thead>tr>td.sorting_desc,
+table.dataTable thead>tr>td.sorting_asc_disabled,
+table.dataTable thead>tr>td.sorting_desc_disabled {
+  color: var(--main-color);
+  padding: 10px 15px;
+  text-align: center;
+}
+
+table.dataTable.table-striped>tbody>tr.odd>* {
+  color: #555;
+}
+
+table.dataTable>tbody>tr {
+  color: #777;
+}
+
+table.dataTable thead th,
+table.dataTable thead td,
+table.dataTable tfoot th,
+table.dataTable tfoot td {
+  color: var(--main-color);
+  text-align: center;
+  padding: 10px 15px;
+}
+
+.page-item.active .page-link {
+  background-color: var(--main-color);
+}
+
+@media(max-width:767px) {
+  div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+    margin-top: 15px;
+  }
+}
+
+div.dataTables_wrapper div.dataTables_info {
+  text-transform: uppercase;
+  color: #777;
+}
+
+table.dataTable thead>tr>th.sorting_asc:before,
+table.dataTable thead>tr>th.sorting_desc:after,
+table.dataTable thead>tr>td.sorting_asc:before,
+table.dataTable thead>tr>td.sorting_desc:after {
+  display: none;
+}
+
+table.dataTable thead>tr>th.sorting:after,
+table.dataTable thead>tr>th.sorting_asc:after,
+table.dataTable thead>tr>th.sorting_desc:after,
+table.dataTable thead>tr>th.sorting_asc_disabled:after,
+table.dataTable thead>tr>th.sorting_desc_disabled:after,
+table.dataTable thead>tr>td.sorting:after,
+table.dataTable thead>tr>td.sorting_asc:after,
+table.dataTable thead>tr>td.sorting_desc:after,
+table.dataTable thead>tr>td.sorting_asc_disabled:after,
+table.dataTable thead>tr>td.sorting_desc_disabled:after {
+  display: none;
+}
+
+table.dataTable {
+  text-align: center;
+  direction: rtl;
+}
+
+@media(max-width:992px) {
+  table.dataTable {
+    direction: ltr;
+  }
+
+  tbody td a {
+    margin-bottom: 3px;
+  }
+}
+
+/* end Table */
